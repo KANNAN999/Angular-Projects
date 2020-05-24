@@ -1,0 +1,25 @@
+<br><h1><u>Student Details</u></h1><br><br><br>
+  <div class="container">
+    
+<table class="table">
+
+  <thead>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Attendance</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+
+<tbody>
+  <tr *ngFor="let s of StudentList">
+    <td>{{s.rollno}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.attendance}}</td>
+    <td>{{s.age}}</td>
+  </tr>
+</tbody>
+
+</table>
+</div>

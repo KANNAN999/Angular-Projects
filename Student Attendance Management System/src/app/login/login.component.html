@@ -1,0 +1,13 @@
+<h1 style="text-align: center">LOGIN PAGE</h1><br><br>
+
+<div class="container" style="text-align: center">
+
+Enter UserName : <input type="text" name="txtusername" [(ngModel)]="username" placeholder="UserName" style="text-align: center"/><br><br>
+
+Enter Password : <input type="password" name="txtpassword" [(ngModel)]="password" placeholder="Password" style="text-align: center"/>
+<br><br><br>
+&nbsp;&nbsp;&nbsp;<button class="btn btn-success" (click)=handleLogin()>Login</button><br><br>
+<div class="alert alert-warning" *ngIf="invalid">Invalid Username or Password</div>
+
+</div>
+
